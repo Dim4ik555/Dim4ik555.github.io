@@ -3,7 +3,7 @@ parse_str($_POST['orderlist'], $orderlist);
 parse_str($_POST['userdata'], $userdata);
 /*
 $orderlist - массив со списком заказа
-$userdata - днные заказчика
+$userdata - данные заказчика
 */
 
 // При желании, можно посмотреть полученные данные, записав их в файл:
@@ -67,7 +67,7 @@ $body = '
 </html>';
 
 // Заголовки
-$headers = array(); // или $headers = array() для версии ниже 5.4
+$headers   = []; // или $headers = array() для версии ниже 5.4
 $headers[] = 'MIME-Version: 1.0'; // Обязательный заголовок
 $headers[] = 'Content-type: text/html; charset=utf-8'; // Обязательный заголовок. Кодировку изменить при необходимости
 $headers[] = 'From: Herson-shop <dim4ik555@ukr.net>'; // От кого
@@ -77,10 +77,10 @@ $headers[] = 'X-Mailer: PHP/'.phpversion();
 $send_ok = mail($to, $subject, $body, implode("\r\n", $headers));
 
 // Ответ на запрос
-$response = array (
+$response = [
 	'errors' => !$send_ok,
 	'message' => $send_ok ? 'Заказ принят в обработку!' : 'Хьюстон! У нас проблемы!'
-);
+];
 // ! Для версий PHP < 5.4 использовать традиционный синтаксис инициализации массивов:
 /*
 $response = array (
