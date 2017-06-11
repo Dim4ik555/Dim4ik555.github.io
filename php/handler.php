@@ -3,7 +3,7 @@ parse_str($_POST['orderlist'], $orderlist);
 parse_str($_POST['userdata'], $userdata);
 /*
 $orderlist - массив со списком заказа
-$userdata - данные заказчика
+$userdata - днные заказчика
 */
 
 // При желании, можно посмотреть полученные данные, записав их в файл:
