@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+<title>Интернет магазин Herson-shop</title>
+<meta name="keywords" content="Купить товары.">
+<meta name="description" content="Уважаемые клиенты! Наш магазин занимаеться продажей всех видов товаров.">
+<link rel="shortcut icon" href="shop.png" alt="shop">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/thumbs.css" />
+<link href="css/jqcart.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jqcart.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/thumbs.js"></script>
+<script>
+$(function(){
+	'use strict';
+	$.jqCart({
+			buttons: '.add_item',
+			handler: './php/handler.php',
+			cartLabel: '.label-place',
+			visibleLabel: true,
+			openByAdding: true,
+			currency: 'грн.'
+	});	
+
+});
+</script>
+<style>
+      #navbar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border: 2px solid #0066FF;
+        border-radius: 20px 5px;
+        width: 650px;
+		height: 33px;
+        text-align: center;
+        background-color: #33ADFF;
+      }
+      #navbar li { display: inline; }
+      #navbar a {
+        color: #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        
+      }
+      #navbar a:hover {
+        border-radius: 20px 5px;
+        background-color: #0066FF;
+      }
+	  ul.ul li {
+      display: inline;
+      margin: 0px -40px 0px 50px;
+      position: relative; 
+      top: -25px; 
+      }
+#label-place {
+    margin: 10px 0;
+}
+.item_box {
+    border: 1px solid #999;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.item_box::after {
+  content:'';
+  display: table;
+  clear: left;
+}
+.item_box > img {
+  float: left;
+}
+.shopping_list {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+.shopping_list td, .shopping_list th {
+    padding: 10px;
+    border: 1px solid #AAAAAA;
+}
+</style>
+</head>
+<body>
+<div align="right" id="menu">
+<ul id="navbar">
+<li><a href="/ru/services">Главная</a></li>
+<li><a href="/ru/services">Гарантия</a></li>
+<li><a href="/ru/how/">Как заказать</a></li>
+<li><a href="/ru/aboutd/">О доставке</a></li>
+<li><a href="/ru/contact/">Обратная связь</a></li>
+<li><a href="/ru/help/">Помощь</a></li>
+</ul>
+</div>
+<img align="right" src="shop2.jpg" width="70" height="70">
+&nbsp;
+<div class="label-place"></div>
+<div id="header">
+<img src="Herson-shop.png" alt="Herson-shop" >
+</div>
+<span class="main-item1"><img src="phone.png" alt="phone" width="15" height="15">&nbsp;(099) 707-23-84</span>
+<form action="" method="post" class="search">
+<input type="search" name="" placeholder="Поиск" class="input" />
+<input type="submit" name="" value="" class="submit" />
+</form>
+<span class="main-item2">
+пн - пт 10:00-18:00<br/>сб 11:00-16:00
+</span>
+<div class="breadcrumbs2">
+<ul class="ul">
+<li><a href="index.html" itemprop="url" class=""><span class="text" itemprop="title">Главная</span></a></li>
+<li>&rarr;</li>
+<li>Телефоны, ноуты, планшеты</span></a></li>
+<li>&rarr;</li>
+<li>Мобильные телефоны и аксессуары</span></a></li>
+<li>&rarr;</li>
+<li>Зарядки, кабели</span></a></li>
+<li>&rarr;</li>
+<li><a href="kabeli-dlya-peredachi-dannyh.html" itemprop="url" class=""><span class="text" itemprop="title">Кабели</span></a></li>
+<li>&rarr;</li>
+<li><span class="last" itemprop="title">Micro USB data кабель 1.23м</span></li>
+</div>
+<main class="container">
+<div class="left-column">
+    <div class="img">
+	    <a href="javascript:void(0)">
+			<img src="img/thumbs/Micro USB data кабель 1.23м/1.jpg"></a>
+    </div>
+        <div class="thumbs">
+            <div class="it">
+			    <a href="img/thumbs/Micro USB data кабель 1.23м/1.jpg" class="active">
+				<img src="img/thumbs/Micro USB data кабель 1.23м/1.jpg" alt="" />
+				</a>
+				</div>	
+        </div>
+</div>
+  <div class="right-column">
+    <div class="product-description">
+      <h1>Micro USB data кабель 1.23м</h1>
+	</div>
+    <div class="product-price">
+      <span>50гр</span>
+      <button class="add_item" data-id="6" data-title="Micro USB data кабель 1.23м" data-price="50" data-img="img/wrapper/Micro USB data кабель 1.23м.jpg">Добавить в корзину</button>
+    </div>
+	<div style="position:absolute;float:right;top:120px;right:380px;width:320px;font-family: Open Sans;color:#444444">
+      <table>
+	    <tr><td>Состояние:</td> <td>&nbsp; <b>Б/У</b></td></tr>
+	    <tr><td>Наличие:</td> <td>&nbsp; <b>В наличии</b></td></tr>
+	  </table>
+    </div>
+  </div>
+</main>
+<div class="product-description1">
+<h2>Описание</h2>
+<p>micro USB-кабель - дает вам возможность подключить телефон к вашему персональному компьютеру.</p>
+&nbsp;
+<p>Преимущество Micro USB шнура:<br>
+• больная скорость передачи данных, что позволяет вам значительно экономить ваше время (скорость передачи через дата кабель в 7-20 раз быстрее чем, через Bluetooth-интерфейс). Поэтому задумайтесь, готовы ли вы ждать несколько часов, чтобы заполнить карту памяти большого объема любимыми композициями и видео через Bluetooth-адаптер, или желаете сделать это намного быстрее с помощью ЮСБ-кабеля?<br>
+• высокая надежность подключения, очень малая вероятность обрыва связи с между Вашим мобильным устройством и компьютером.<br>
+• только с помощью дата-кабеля возможно произвести перепрошивку телефона.<br>
+• телефон заряжается во время подключения мобильного телефона с помощью usb кабеля.</p>
+&nbsp;
+<p>После установки драйвера компьютер сам проведет ряд операций и потом распознает подключенный через USB-кабель телефон. Обычно процесс подключения microUSB кабеля к компьютеру не сложнее установки обычной рядовой программы.<br>
+Цвет - черный<br>
+Длина кабеля - 1.23 м<br>
+Тип кабеля/переходника – USB - micro-USB<br>
+Назначение (бренд) - Универсальный</p>
+&nbsp;
+</div>
+</ul>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+<title>Интернет магазин Herson-shop</title>
+<meta name="keywords" content="Купить товары.">
+<meta name="description" content="Уважаемые клиенты! Наш магазин занимаеться продажей всех видов товаров.">
+<link rel="shortcut icon" href="shop.png" alt="shop">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/thumbs.css" />
+<link href="css/jqcart.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jqcart.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/thumbs.js"></script>
+<script>
+$(function(){
+	'use strict';
+	$.jqCart({
+			buttons: '.add_item',
+			handler: './php/handler.php',
+			cartLabel: '.label-place',
+			visibleLabel: true,
+			openByAdding: true,
+			currency: 'грн.'
+	});	
+
+});
+</script>
+<style>
+      #navbar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border: 2px solid #0066FF;
+        border-radius: 20px 5px;
+        width: 650px;
+		height: 33px;
+        text-align: center;
+        background-color: #33ADFF;
+      }
+      #navbar li { display: inline; }
+      #navbar a {
+        color: #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        
+      }
+      #navbar a:hover {
+        border-radius: 20px 5px;
+        background-color: #0066FF;
+      }
+	  ul.ul li {
+      display: inline;
+      margin: 0px -40px 0px 50px;
+      position: relative; 
+      top: -25px; 
+      }
+#label-place {
+    margin: 10px 0;
+}
+.item_box {
+    border: 1px solid #999;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.item_box::after {
+  content:'';
+  display: table;
+  clear: left;
+}
+.item_box > img {
+  float: left;
+}
+.shopping_list {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+.shopping_list td, .shopping_list th {
+    padding: 10px;
+    border: 1px solid #AAAAAA;
+}
+</style>
+</head>
+<body>
+<div align="right" id="menu">
+<ul id="navbar">
+<li><a href="/ru/services">Главная</a></li>
+<li><a href="/ru/services">Гарантия</a></li>
+<li><a href="/ru/how/">Как заказать</a></li>
+<li><a href="/ru/aboutd/">О доставке</a></li>
+<li><a href="/ru/contact/">Обратная связь</a></li>
+<li><a href="/ru/help/">Помощь</a></li>
+</ul>
+</div>
+<img align="right" src="shop2.jpg" width="70" height="70">
+&nbsp;
+<div class="label-place"></div>
+<div id="header">
+<img src="Herson-shop.png" alt="Herson-shop" >
+</div>
+<span class="main-item1"><img src="phone.png" alt="phone" width="15" height="15">&nbsp;(099) 707-23-84</span>
+<form action="" method="post" class="search">
+<input type="search" name="" placeholder="Поиск" class="input" />
+<input type="submit" name="" value="" class="submit" />
+</form>
+<span class="main-item2">
+пн - пт 10:00-18:00<br/>сб 11:00-16:00
+</span>
+<div id="mainmenu">
+<ul>
+    <li class="parent"><a href="#">Телефоны, ноуты, планшеты</a>
+<ul>
+        <li class="parent"><a href="#">Мобильные телефоны и аксессуары</a>
+<ul>
+            <li><a href="mobilnye-telefony.html"> Мобильные телефоны </a></li>
+            <li class="parent"><a href="#">Бамперы, пленки, чехлы</a>
+<ul>
+				<li><a href="plenki-stekla-skiny.html"> Пленки, стекла, скины </a></li>
+                <li><a href="chehly-dlya-mobilnyh-telefonov.html"> Чехлы для мобильных телефонов </a></li>
+</ul>
+</li>
+            <li class="parent"><a href="#">Зарядки, кабели</a>
+<ul>
+				<li><a href="zaryadnye-ustrojstva-dlya-telefonov.html"> Зарядные для телефонов </a></li>
+                <li><a href="kabeli-dlya-peredachi-dannyh.html"> Кабели </a></li>
+</ul>				
+				<li><a href="stilusy-dlya-telefonov_i_planshetov.html"> Стилусы </a></li>
+</ul>
+</li>
+    <li class="parent"><a href="#">Планшеты и аксессуары</a>
+<ul>
+		<li><a href="planshety.html"> Планшеты </a></li>
+        <li><a href="sumki-chexly-dlya-planshetov"> Сумки, чехлы для планшетов </a></li>
+	    <li><a href="stilusy-dlya-telefonov_i_planshetov.html"> Стилусы </a></li>
+        <li><a href="zaryadnye-ustrojstva-dlya-planshetov.html"> Зарядные для планшетов </a></li>
+</ul>
+</li>					
+	<li><a href="#">Ноутбуки</a></li>
+</ul>
+    <li class="parent"><a href="#">Бытовая техника</a>
+<ul>
+        <li><a href="#"> Швейные машины </a></li>
+</ul>
+    <li class="parent"><a href="#">ТВ, фото , видео, аудио</a>
+<ul>
+        <li><a href="#"> Пульты ДУ </a></li>
+</ul>
+<li class="parent"><a href="#">Одежда, косметика, аксессуары</a>
+<ul>
+        <li class="parent"><a href="#">Аксуссуары</a>
+<ul>
+		     <li><a href="#"> Очки солнцезащитные </a></li>
+</ul>
+</ul>
+</ul>
+</div>
+<div class="breadcrumbs1">
+<div>
+<ul class="ul">
+<li><a href="index.html" itemprop="url" class=""><span class="text" itemprop="title">Главная</span></a></li>
+<li>&rarr;</li>                
+<li>Телефоны, ноуты, планшеты</span></a></li>
+<li class="arr bread_item">&rarr;</li>                
+<li>Планшеты и аксессуары</span></a></li>
+<li>&rarr;</li>                
+<li><span class="last" itemprop="title">Стилусы</span></li>
+</ul>
+</div>
+</div>
+<div class="catalog_h2"">
+<h2><strong>Стилусы</strong></h2>
+</div>
+<div class="wrapper">
+    <div class="left1">
+<div class="image">
+<a href="stilus_landfox_black.html"><img src="img/wrapper/Стилус LandFox Black.jpg" width="270" height="220" alt="Стилус LandFox Black" title="Стилус LandFox Black" class="img-responsive" /></a>
+</div>
+<div class="info-wrp">
+<div class="info-content">
+<h4 class="name"><a href="stilus_landfox_black.html">Стилус LandFox Black</a></h4>
+</div>
+<div class="price-wrp">
+<div class="price grid-on list-on normal-on">
+<span class="price-new">70грн</span>
+</div>
+</div>
+</div>
+    </div>
+	<div class="left2">
+<div class="image">
+<a href="stilus_becover.html"><img src="img/wrapper/Стилус для емкостных экранов BeCover.jpg" width="270" height="220" alt="Стилус для емкостных экранов BeCover" title="Стилус для емкостных экранов BeCover" class="img-responsive" /></a>
+</div>
+<div class="info-wrp">
+<div class="info-content">
+<h4 class="name"><a href="stilus_becover.html">Стилус для емкостных экранов BeCover</a></h4>
+</div>
+<div class="price-wrp">
+<div class="price grid-on list-on normal-on">
+<span class="price-new">50грн</span>
+</div>
+</div>
+</div>
+	</div>
+	<div class="left3">
+<div class="image">
+<a href="mini_stilus_gold.html"><img src="img/wrapper/Мини стилус с креплением в разъём для наушников 3.5 мм Gold.jpg" width="270" height="220" alt="Мини стилус с креплением в разъём для наушников 3.5 мм Gold" title="Мини стилус с креплением в разъём для наушников 3.5 мм Gold" class="img-responsive" /></a>
+</div>
+<div class="info-wrp">
+<div class="info-content">
+<h4 class="name"><a href="mini_stilus_gold.html">Мини стилус с креплением в разъём для наушников 3.5 мм Gold</a></h4>
+</div>
+<div class="price-wrp">
+<div class="price grid-on list-on normal-on">
+<span class="price-new">30грн</span>
+</div>
+</div>
+</div>
+</div>
+	<div class="left4">
+</div>
+	<div class="left5">
+</div>
+</div> 
+</body>
+</html>

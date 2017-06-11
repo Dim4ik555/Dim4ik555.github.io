@@ -1,0 +1,29 @@
+.img {
+  width: 472px;
+  border: 1px solid #9d9d9d;
+  padding: 10px;
+}
+.img img {
+  display: block;
+  height: 300px;
+  margin: auto;
+}
+.thumbs a {
+  padding: 1px;
+  display: inline-block;
+  width: 59px;
+  float: left;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.thumbs img {
+  width: 100%;
+  vertical-align: middle;
+}
+.thumbs a,
+.img a {
+  outline: none;
+}
+.thumbs a.active {
+  border: 1px solid red;
+}
